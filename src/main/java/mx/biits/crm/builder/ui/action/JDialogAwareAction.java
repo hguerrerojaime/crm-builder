@@ -4,9 +4,9 @@ import java.awt.event.ActionEvent;
 
 import javax.swing.JDialog;
 
-public abstract class JDialogAwareDialog<T extends JDialog> extends WindowAwareAction<T> {
+public abstract class JDialogAwareAction<T extends JDialog> extends WindowAwareAction<T> {
 
-	public JDialogAwareDialog(Class<T> windowClass) {
+	public JDialogAwareAction(Class<T> windowClass) {
 		super(windowClass);
 	}
 
